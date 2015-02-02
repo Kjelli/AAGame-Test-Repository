@@ -18,8 +18,8 @@ public class GameScreen implements Screen {
 
 		world = new GameWorld(midPointY);
 		renderer = new GameRenderer(world, (int) gameHeight, midPointY);
+		
 		Gdx.app.log("GameScreen", "Attached");
-
 		Gdx.input.setInputProcessor(new InputHandler(world.getBird()));
 	}
 
@@ -35,14 +35,12 @@ public class GameScreen implements Screen {
 		runTime += delta;
 		world.update(delta);
 		renderer.render(runTime);
-
 	}
 
 	@Override
 	public void resize(int width, int height) {
 		// TODO Auto-generated method stub
 		Gdx.app.log("GameScreen", "Resizing");
-
 	}
 
 	@Override

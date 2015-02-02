@@ -47,7 +47,6 @@ public class AssetLoader {
 
         bar = new TextureRegion(texture, 136, 16, 22, 3);
         bar.flip(false, true);
-
     }
 
     public static void dispose() {

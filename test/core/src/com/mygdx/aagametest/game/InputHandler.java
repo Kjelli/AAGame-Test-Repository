@@ -14,7 +14,7 @@ public class InputHandler implements InputProcessor {
 	@Override
 	public boolean keyDown(int keycode) {
 		myBird.onClick();
-		return false;
+		return true;
 	}
 
 	@Override

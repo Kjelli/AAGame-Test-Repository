@@ -8,14 +8,20 @@ public class AAGameTest extends Game {
 
 	@Override
 	public void create() {
-		Gdx.app.log("ZBGame", "created");
+		Gdx.app.log("Game", "created");
+		
+		/*
+		 *  Entry point til programmet
+		 */
+		
         AssetLoader.load();
+        
         setScreen(new GameScreen());
 	}
 	
 	@Override
 	public void dispose() {
-		Gdx.app.log("ZBGame", "disposing");
+		Gdx.app.log("Game", "disposing");
 		super.dispose();
 		AssetLoader.dispose();
 	}
